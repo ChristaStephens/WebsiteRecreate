@@ -1,0 +1,53 @@
+Donut shop website
+
+
+1. <title>The Donut Shop</title>
+
+2. <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+
+
+3. <div class="bg"></div>
+
+
+4. <img id="centered_2"src="https://www.goodiegirlcookies.com/wp-content/uploads/2017/01/slider-round-button-coming-soon.png" />
+
+
+5. <span id="centered_1">The Donut Shop</span>
+
+
+6. #centered_2 {
+		position: absolute;
+		top: 65%;
+		left: 22%;
+		transform: translate(-50%, -50%);
+	}
+	
+	
+7. body, html {
+		height:100%;
+		width:100%;
+		margin: 0;
+	}
+	
+	
+8. .bg {
+		/* The image used */
+		background-image: url("http://codewithsharen.com/sc/images/sharon-mccutcheon-532018-unsplash.jpg");
+		/* Full height */
+		height:100%;
+		/* Center and scale the image nicely */
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+9. #centered_1 {
+		position: absolute;
+		font-family: 'Gloria Hallelujah', cursive;
+		color:white;
+		text-shadow: 1px 1px 18px black;
+		font-weight:bold;
+		font-size:68px;
+		top: 30%;
+		left: 20%;
+		transform: translate(-50%, -50%);
+	}

@@ -1,0 +1,51 @@
+Beyonce face
+
+<!DOCTYPE html>
+<html>
+<style>
+#beyonce{
+ z-index:-1;
+position:relative;
+top:100px;
+left:150px;
+}
+#leftLash{
+ position:absolute;
+ left:190px;
+ top:283px;
+}
+#rightLash{
+ z-index:1;
+ position:absolute;
+ left:0;
+ top:0;
+}
+#leftEar{
+ z-index:1;
+ position:absolute;
+ left:0;
+ top:0;
+}
+#rightEar{
+ z-index:0;
+ position:absolute;
+ left:0;
+ top:0;
+}
+#glasses{
+ z-index:0;
+ position:absolute;
+ left:0;
+ top:0;
+}
+</style>
+<body>
+<img id="leftEar" src="http://codewithsharen.com/img/LeftEar.png" alt="LeftEar" height="200" width="150">
+<img id="rightEar" src="http://codewithsharen.com/img/RightEar.png" alt="RightEar" height="200" width="150">
+<img id="leftLash" src="http://codewithsharen.com/img/LeftEye.png" alt="LeftLash" height="100" width="190">
+<img id="rightLash" src="http://codewithsharen.com/img/RightEye.png" alt="RightLash" height="100" width="190">
+<img id="glasses" src="http://codewithsharen.com/img/glasses.png" alt="Glasses" height="170" width="300">
+<img id="beyonce" src="http://codewithsharen.com/img/beyonceFace.png" alt="Beyone" height="420px"
+width="420px">
+</body>
+</html>
