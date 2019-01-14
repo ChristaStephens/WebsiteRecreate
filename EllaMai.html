@@ -34,17 +34,53 @@
 	  height: 100%;
 	  width: 0;
 	  position: fixed;
-	  /* how you layer things in CSS */
+	  /* how you layer things in CSS, 
+	  use z-index to put this on top 
+	  of the background */
 	  z-index: 1;
 	  top: 0;
 	  left: 0;
-	  background-color: #111;
+	  /* will change background 
+	  to be probably opaque*/
+	  background-color: rgba(255, 153, 255, .5);
+	  /* overflow keeps the words in 
+	  the navbar from going beyond 
+	  the navbar background */
 	  overflow-x: hidden;
+	  /* transition is how fast it opens */
 	  transition: 0.5s;
+	  /* makes it further down */
 	  padding-top: 60px;
 }
 
 
+/*changes the alignment of the words in the navbar
+targets the a links from the div bar */
+.sidenav a {
+	  padding: 8px 8px 8px 32px;
+	  text-decoration: none;
+	  text-transform:uppercase;
+	  font-size: 25px;
+	  color: #fff;
+	  display: block;
+	  transition: 0.3s;
+}
+
+/* changes hover color of text in navbar */
+.sidenav a:hover {
+	color: purple;
+	transition: 1s;
+}
+
+/* changes the close button in navbar */
+.sidenav .closebtn {
+	  position: absolute;
+	  top: 0;
+	  right: 25px;
+	  font-size: 36px;
+	  margin-left: 50px;
+}
+	/*** END Navbar **/
 
 
 
@@ -75,17 +111,17 @@
 	 	<div id="mySidenav" class="sidenav">
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 			<!--	# keeps the page from refreshing -->
-			<a href="#">tour</a>
-			<a href="#">shop</a>
-			<a href="#">music</a>
-			<a href="#">videos</a>
+			<a href="#">bio-tour</a>
+			<a href="#">github-shop</a>
+			<a href="#">projects-music</a>
+			<a href="#">code-videos</a>
 			<a href="#">ellasodes</a>
 		</div>
 	</div>
 	   <!-- END Navbar --> 
 
 	   <!-- Nabar Icon, called a hamburger entity -->     
-    <span class="top-left" style="font-size:30px;cursor:pointer;color:red;" onclick="openNav()">&#9776;</span> 
+    <span class="top-left" style="font-size:30px;cursor:pointer;color:rgb(255, 153, 255);" onclick="openNav()">&#9776;</span> 
 
 
 
