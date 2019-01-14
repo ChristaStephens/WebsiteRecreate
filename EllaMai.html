@@ -1,79 +1,90 @@
-<!DOCTYPE html>
-<html>
-<head>
-<style>
+	<!DOCTYPE html>
+	<html>
+	<head>
+	<style>
 
-/* 
-CSS for page
-classes always start with a period and 
-id start with hastag & name of id
-*/
-
-
-body{margin:0;}
-
-.ellaMainImage{
-     margin-bottom:0;
-}	
+	/* 
+	CSS for page
+	classes always start with a period and 
+	id start with hastag & name of id
+	*/
 
 
+	body{margin:0;}
+
+	.ellaMainImage{
+	     margin-bottom:0;
+	}	
+
+
+	/*** START Navbar **/
+	 .top-left {
+	  position: absolute;
+	  top: 8px;
+	  left: 16px;
+}
 
 
 
 
 
 
-</style> 
-</head>
-<body>
 
-<!-- 
-	Authored by: Christa Stephens
-	Date: 1/12/19
-	Creating a profile page
--->
 
-	<!-- MAIN Image -->
+	</style> 
+	</head>
+	<body>
 
-	<!-- classes are so that we can talk to are tags in CSS / style -->
- <img class="ellaMainImage" src="https://vignette.wikia.nocookie.net/gemcrust/images/8/88/Temple_Background.png/revision/latest?cb=20160911235803" alt="Snow" style="width:100%;">
- 
+	<!-- 
+		Authored by: Christa Stephens
+		Date: 1/12/19
+		Creating a profile page
+	-->
 
-<!-- START Navbar
-	a div is a box
- -->
+		<!-- MAIN Image -->
+
+		<!-- classes are so that we can talk to are tags in CSS / style -->
+	 <img class="ellaMainImage" src="https://vignette.wikia.nocookie.net/gemcrust/images/8/88/Temple_Background.png/revision/latest?cb=20160911235803" alt="steven universe home" style="width:100%;">
+	 
+
+	<!-- START Navbar
+		a div is a box
+	 -->
 	<div class="container">
-
-		 <div id="mySidenav" class="sidenav">
-		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		<a href="#">tour</a>
-		<a href="#">shop</a>
-		<a href="#">music</a>
-		<a href="#">videos</a>
-		<a href="#">ellasodes</a>
+			<!--&time is an html entity for "x" -->
+	 	<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<!--	# keeps the page from refreshing -->
+			<a href="#">tour</a>
+			<a href="#">shop</a>
+			<a href="#">music</a>
+			<a href="#">videos</a>
+			<a href="#">ellasodes</a>
+		</div>
 	</div>
+	   <!-- END Navbar --> 
 
-   </div>
-   <!-- END Navbar --> 
-
-
-
-   <!--Java script always goes at the bottom -->
-<script>
-	function openNav() {
-		document.getElementById("mySidenav").style.width = "250px";
-}
-
-	function closeNav() {
-		document.getElementById("mySidenav").style.width = "0";
-}
-</script>
+	   <!-- Nabar Icon, called a hamburger entity -->     
+    <span class="top-left" style="font-size:30px;cursor:pointer;color:red;" onclick="openNav()">&#9776;</span> 
 
 
 
+	   <!--Java script, always goes at the bottom -->
+	<script>
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "250px";
+	}
+
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+	}
+	</script>
 
 
 
-	
-</body>
-</html>
+
+
+
+		
+	</body>
+	</html>
