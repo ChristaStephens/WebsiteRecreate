@@ -5,8 +5,8 @@
 
 	/* 
 	CSS for page
-	classes always start with a period and 
-	id start with hastag & name of id
+	classes always start with a period(.) and 
+	id start with hashtag(#) & name of id
 	*/
 
 
@@ -17,11 +17,31 @@
 	}	
 
 
-	/*** START Navbar **/
+	/*** 
+	START Navbar - 
+	absolute position- moves along the page
+	top (think from the top)
+	left (think from the left) 
+	 **/
 	 .top-left {
 	  position: absolute;
 	  top: 8px;
 	  left: 16px;
+}
+
+/* Opens and cloes navbar */
+.sidenav {
+	  height: 100%;
+	  width: 0;
+	  position: fixed;
+	  /* how you layer things in CSS */
+	  z-index: 1;
+	  top: 0;
+	  left: 0;
+	  background-color: #111;
+	  overflow-x: hidden;
+	  transition: 0.5s;
+	  padding-top: 60px;
 }
 
 
