@@ -134,9 +134,7 @@ targets the a links from the div bar */
 }
 
 .flip-box {
-    display: inline-block;
   background-color: transparent;
-  border-radius: 50%;
   width: 300px;
   height: 200px;
   border: 1px solid #f1f1f1;
@@ -150,15 +148,12 @@ targets the a links from the div bar */
   height: 100%;
   text-align: center;
   transition: transform 0.8s;
-  border-radius: 50%;
   transform-style: preserve-3d;
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-box:hover .flip-box-inner {
   transform: rotateY(180deg);
-  border-radius: 50%;
-
 }
 
 /* Position the front and back side */
@@ -167,14 +162,12 @@ targets the a links from the div bar */
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  border-radius: 50%;
 }
 
 /* Style the front side (fallback if image is missing) */
 .flip-box-front {
   background-color: #bbb;
   color: black;
-  border-radius: 50%;
 }
 
 /* Style the back side */
@@ -182,11 +175,6 @@ targets the a links from the div bar */
   background-color: dodgerblue;
   color: white;
   transform: rotateY(180deg);
-  border-radius: 50%;
-}
-
-.block {
-  padding: 5% 0% 0% 15%;
 }
 
 /* targets bottom 3 immages*/
@@ -353,8 +341,8 @@ targets the a links from the div bar */
 <div class="flip-box">
   <div class="flip-box-inner">
     <div class="flip-box-front">
-     <img id="round" src= "wire.png" style="width:300px;height:200px">
-      
+      <img src="wire.png" alt="wire frame" style="width:300px;height:200px">
+    	
     </div>
     <div class="flip-box-back">
       <h2>Paris</h2>
